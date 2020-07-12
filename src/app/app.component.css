@@ -1,0 +1,120 @@
+.background_image {
+    position: absolute;
+    margin-left: -50px;
+}
+
+.chem_lines {
+    src: "assets/yellow.png";
+}
+
+.card {
+    cursor: pointer;
+    height: 175px;
+    width: 117px;
+    font: #a17f1a;
+}
+
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    /* color: white; */
+    text-align: center;
+}
+
+
+
+.rating {
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: white; */
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+}
+
+.position {
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: white; */
+    font-size: 10px;
+    position: relative;
+}
+
+.legend_font {
+    color: #a17f1a;
+}
+
+.standard_font {
+    color: white;
+    z-index: 3;
+}
+
+.strikerToLW {
+    transform: rotate(80deg);
+}
+
+.strikerToRW {
+    transform: rotate(-80deg);
+}
+
+.strikerToLCM {
+    transform: rotate(40deg);
+}
+
+.strikerToRCM {
+    transform: rotate(-40deg);
+}
+
+.LWToCM {
+    transform: rotate(-30deg);
+}
+
+.RWToCM {
+    transform: rotate(30deg);
+}
+
+.CMToCM {
+    transform: rotate(90deg);
+}
+
+.LCMToCDM {
+    transform: rotate(-60deg);
+}
+
+.RCMToCDM {
+    transform: rotate(60deg);
+}
+
+.CDMToLCB {
+    transform: rotate(40deg);
+}
+
+.CDMToRCB {
+    transform: rotate(-40deg);
+}
+
+.CBToRB {
+    transform: rotate(75deg);
+}
+
+.CBToCB {
+    transform: rotate(90deg);
+}
+
+.CBToLB {
+    transform: rotate(-75deg);
+}
+
+.LBToCM {
+    transform: rotate(40deg)
+}
+
+.RBToCM {
+    transform: rotate(-45deg);
+}
+
+.GKToLCB {
+    transform: rotate(-45deg);
+}
+
+.GKToRCB {
+    transform: rotate(45deg);
+}

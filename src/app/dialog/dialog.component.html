@@ -1,0 +1,148 @@
+<div style="margin-left: 30%;">
+    <!-- <mat-dialog-content>
+        <p> {{ data.name }} should be michael ballack </p>
+    </mat-dialog-content> -->
+    <form>
+    <mat-form-field appearance="fill" style="width: 300px; margin-left: -70px;">
+        <mat-label>Last Name</mat-label>
+        <input id = "last_name" matInput placeholder="">
+      </mat-form-field>
+      </form>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Card Type</mat-label>
+          <mat-select [(ngModel)]="cardType">
+            <mat-option *ngFor="let card of cards" [value]="card.location">
+              {{card.type}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div>
+      <mat-form-field style="margin-left: -70px;">
+        <mat-label>Select Nation</mat-label>
+        <mat-select [(ngModel)]="selectedNation">
+          <mat-option (focus)="updateFile()" *ngFor="let nation of nations" [value]="nation.image">
+            {{nation.value}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <p style="margin-top: -42.5px; margin-left: 120px;">OR</p>
+      <input (change)="handleNationInput($event.target.files)" type="file" id = "nation_files" multiple=50 hidden="hidden"/>
+      <button (click)="chooseNationFiles()" mat-button color="primary" style="background-color: #569CD7; color: white; top: -42.5px; margin-left: 160px; position: relative;">+  Upload Flag</button>
+      <!-- <p *ngIf="selectedNation != ''">{{ selectedNation }}</p> -->
+      <p style="margin-top: -30px; margin-left: 120px;" *ngIf="visible_nation_file != ''">{{ visible_nation_file }}</p>
+    </div>
+    <div>
+      <mat-form-field style="margin-left: -70px;">
+        <mat-label>Select Club</mat-label>
+        <mat-select [(ngModel)]="selectedClub">
+          <mat-option (focus)="updateClubFile()" *ngFor="let club of clubs" [value]="club.image">
+            {{club.value}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <p style="margin-top: -42.5px; margin-left: 120px;">OR</p>
+      <input (change)="handleClubInput($event.target.files)" type="file" id = "club_files" multiple=50 hidden="hidden"/>
+      <button (click)="chooseClubFiles()" mat-button color="primary" style="background-color: #569CD7; color: white; top: -40px; margin-left: 160px; position: relative;">+  Upload Crest</button>
+      <!-- <p *ngIf="selectedNation != ''">{{ selectedNation }}</p> -->
+      <p style="margin-top: -30px; margin-left: 120px;" *ngIf="visible_club_file != ''">{{ visible_club_file }}</p>
+
+    </div>
+
+    <div>
+      <mat-form-field style="margin-left: -100px;">
+        <mat-label>Select League</mat-label>
+        <mat-select [(ngModel)]="selectedLeague" [disabled]="isCustomLeague()">
+          <mat-option (focus)="updateLeagueFile()" *ngFor="let league of leagues" [value]="league.value">
+            {{league.value}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <p style="margin-left: 100px; margin-top: -40px;">OR</p>
+
+      <form>
+        <mat-form-field appearance="fill" style="width: 180px; margin-left: 140px; top: -60px;">
+            <mat-label>Custom League</mat-label>
+            <input id = "league" matInput placeholder="" [disabled]="isLeagueSelected()">
+          </mat-form-field>
+          </form>
+    
+    </div>
+
+
+    <div>
+      <input (change)="handleFileInput($event.target.files)" type="file" id = "files" multiple=50 hidden="hidden"/>
+      <button (click)="chooseFiles()" mat-button color="primary" style="background-color: #569CD7; color: white; top: -20px; margin-left: 0%; position: relative;">&nbsp;&nbsp;&nbsp;&nbsp;+  Upload Player Image&nbsp;&nbsp;&nbsp;&nbsp;</button>
+      <p style="margin-top: 10px; margin-left: 20px;" *ngIf="visible_player_file != ''">{{ visible_player_file }}</p>
+    <!-- <button (click)="updatePlayer()" mat-button color="primary" style="background-color: #5FA784; color: white;">UPDATE</button> -->
+    <!-- <button (click)="updatePlayer()" mat-button color="primary" style="background-color: #5FA784; color: white;">Close</button> -->
+      </div>
+      <div style="margin-left: 17%; margin-top: 20px; margin-bottom: -10000px;">
+        <form>
+          <mat-form-field appearance="fill" style="width: 80px;">
+              <mat-label>Overall</mat-label>
+              <input id = "overall" matInput placeholder="">
+          </mat-form-field>
+        </form>
+
+
+
+        <form>
+          <mat-form-field appearance="fill" style="width: 80px; margin-left: -100px;">
+              <mat-label>{{ returnFirstStat(data) }}</mat-label>
+              <input id = "pace" matInput placeholder="">
+          </mat-form-field>
+        </form>
+
+
+        <form>
+          <mat-form-field appearance="fill" style="width: 80px; margin-left: -100px;">
+              <mat-label>{{ returnSecondStat(data) }}</mat-label>
+              <input id = "shooting" matInput placeholder="">
+          </mat-form-field>
+        </form>
+
+        <form>
+          <mat-form-field appearance="fill" style="width: 80px; margin-left: -100px;">
+              <mat-label>{{ returnThirdStat(data) }}</mat-label>
+              <input id = "passing" matInput placeholder="">
+          </mat-form-field>
+        </form>
+
+
+        <form>
+          <mat-form-field appearance="fill" style="width: 80px; margin-left: 100px; top: -243px;">
+              <mat-label>{{ returnFourthStat(data) }}</mat-label>
+              <input id = "dribbling" matInput placeholder="">
+          </mat-form-field>
+        </form>
+
+        <form>
+          <mat-form-field appearance="fill" style="width: 80px; margin-left: 100px; top: -243px;">
+              <mat-label>{{ returnFifthStat(data) }}</mat-label>
+              <input id = "defending" matInput placeholder="">
+          </mat-form-field>
+        </form>
+
+
+        <form>
+          <mat-form-field appearance="fill" style="width: 80px; margin-left: 100px; top: -243px;">
+              <mat-label>{{ returnSixthStat(data) }}</mat-label>
+              <input id = "heading" matInput placeholder="">
+          </mat-form-field>
+        </form>
+
+        <button (click)="updatePlayer()" mat-button color="primary" style="background-color: #5FA784; color: white; top: -130px; margin-left: 0%;">UPDATE</button>
+
+
+      
+      </div>
+      <div>
+        <!-- <button (click)="updatePlayer()" mat-button color="primary" style="background-color: #5FA784; color: white; top: -200px; margin-left: 18%;">UPDATE</button> -->
+      </div>
+        <!-- <img style="height: 30px;" src="/assets/messi.png" > -->
+</div>
