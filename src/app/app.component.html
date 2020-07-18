@@ -311,7 +311,7 @@
 <div style="margin-left: 520px; margin-top: 620px; position: absolute;">
    <img class="card" (click)="updatePlayer(rb)" (click)="openRB()" src="{{ rb.card }}" alt="rb">
    <div class="card" [class.legend_font]="is_LegendCard(rb)" [class.standard_font]="!is_LegendCard(rb)">
-      <h1 class="TAAname" (click)="openRB()" style="margin-top: -167px;">{{ rb.name }}</h1>
+      <h1 class="name" (click)="openRB()" style="margin-top: -167px;">{{ rb.name }}</h1>
       <h2 class="rating" (click)="openRB()" style="margin-left: 8px; margin-top: -7px;">{{ rb.overall }}</h2>
       <h3 class="position" (click)="openRB()" style="margin-left: 42px; margin-top: -32px;">RB</h3>
                             
