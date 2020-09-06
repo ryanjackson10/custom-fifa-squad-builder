@@ -118,3 +118,173 @@
 .GKToRCB {
     transform: rotate(45deg);
 }
+
+.attackerLink {
+    width: 5px; 
+    height: 220px; 
+    z-index: -5;
+}
+
+.genericStatsStyle {
+    font-weight: 600;
+    font-size: 11px;
+    position: absolute;
+}
+
+.pace {
+    margin-left: 15px;
+    margin-top: 60px;
+}
+
+.shooting {
+    margin-top: 76px;
+    margin-left: 14.5px
+}
+
+.passing {
+    margin-top: 91px; 
+    margin-left: 14.5px;
+}
+
+.dribbling {
+    margin-top: 60px; 
+    margin-left: 66.5px;
+}
+
+.defending {
+    margin-top: 76px; 
+    margin-left: 66.5px;
+}
+
+.heading {
+    margin-top: 91px; 
+    margin-left: 66.5px;
+}
+
+.chemistryDiv {
+    margin-top: 250px; 
+    margin-left: 40%; 
+    z-index: 5; 
+    position: absolute; 
+    display: flex
+}
+
+.chemistryCommon {
+    position: absolute;
+    z-index: -50;
+}
+
+.S_LW {
+    margin-top: 10px;
+    margin-left: -90px;
+}
+
+.S_RW {
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.S_LCM {
+    margin-top: 130px;
+    margin-left: -40px;
+}
+
+.S_RCM {
+    margin-top: 130px; 
+    margin-left: 150px;
+}
+
+.LW_CM {
+    margin-top: 130px; 
+    margin-left: -220px;
+}
+
+.RW_CM {
+    margin-top: 130px; 
+    margin-left: 330px;
+}
+
+.CM_CM {
+    margin-top: 220px; 
+    margin-left: 50px;
+}
+
+.LCM_CDM {
+    margin-top: 380px; 
+    margin-left: -40px;
+}
+
+.RCM_CDM {
+    margin-top: 380px; 
+    margin-left: 140px;
+}
+
+.CDM_LCB {
+    margin-top: 540px; 
+    margin-left: -20px;
+}
+
+.CDM_RCB {
+    margin-top: 540px; 
+    margin-left: 150px
+}
+
+.CB_RB {
+    margin-top: 540px; 
+    margin-left: 450px;
+}
+
+.CB_CB {
+    margin-top: 590px; 
+    margin-left: 75px;
+}
+
+.CB_LB {
+    margin-top: 560px; 
+    margin-left: -250px;
+}
+
+.LB_CM {
+    margin-top: 360px; 
+    margin-left: -250px;
+}
+
+.RB_CM {
+    margin-top: 360px; 
+    margin-left: 440px;
+}
+
+.GK_LCB {
+    margin-top: 780px; 
+    margin-left: -20px;
+}
+
+.GK_RCB {
+    margin-top: 780px; 
+    margin-left: 180px;
+}
+
+.nationStyle {
+    margin-left: 13px; 
+    margin-top: 24px; 
+    position: absolute; 
+    box-shadow: 0.2px 0.2px;
+}
+
+.clubStyle {
+    margin-left: 13px; 
+    margin-top: -4px; 
+    position: absolute;
+}
+
+.imgStyle {
+    margin-left: 57px;
+    margin-top: -18px; 
+    position: absolute;
+}
+
+
+
+
+
+
