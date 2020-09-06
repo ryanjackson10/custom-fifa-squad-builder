@@ -283,6 +283,16 @@
     position: absolute;
 }
 
+.positionStyle {
+    margin-left: 42px; 
+    margin-top: -32px
+}
+
+.ratingStyle {
+    margin-left: 8px; 
+    margin-top: -7px;
+}
+
 
 
 

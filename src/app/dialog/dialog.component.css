@@ -1,0 +1,39 @@
+.format {
+    margin-left: 17%;
+    margin-top: 20px;
+}
+
+.column1 {
+    width: 80px; 
+    margin-left: -100px;
+}
+
+.column2 {
+    width: 80px; 
+    margin-left: 100px; 
+    top: -243px;
+}
+
+.uploadImage {
+    background-color: #569CD7; 
+    color: white; 
+    top: -20px; 
+    margin-left: 0%; 
+    position: relative;
+}
+
+.uploadFlag {
+    background-color: #569CD7; 
+    color: white; 
+    top: -42.5px; 
+    margin-left: 160px; 
+    position: relative;
+}
+
+.uploadCrest {
+    background-color: #569CD7; 
+    color: white; 
+    top: -40px; 
+    margin-left: 160px; 
+    position: relative;
+}

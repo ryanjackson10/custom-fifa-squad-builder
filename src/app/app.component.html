@@ -85,8 +85,8 @@
     <img class="card" (click)="updatePlayer(striker)" (click)="openDialog()" src="{{ striker.card }}" alt="striker">
     <div class="card" [class.legend_font]="is_LegendCard(striker)" [class.standard_font]="!is_LegendCard(striker)">
        <h1 class="name" (click)="openDialog()" style="margin-top: -167px;">{{ striker.name }}</h1>
-       <h2 class="rating" (click)="openDialog()" style="margin-left: 8px; margin-top: -7px;">{{ striker.overall }}</h2>
-       <h3 class="position" (click)="openDialog()" style="margin-left: 42px; margin-top: -32px;">ST</h3>
+       <h2 class="rating ratingStyle" (click)="openDialog()">{{ striker.overall }}</h2>
+       <h3 class="position positionStyle" (click)="openDialog()">ST</h3>
      
        <img (click)="openDialog()" width="52px" height="58px" *ngIf="striker.image" [src]="striker.image" class="image imgStyle">
        <img width="27px" height="15px" class="nationStyle" src="{{ striker.nation }}" >
@@ -110,8 +110,8 @@
    <img class="card" (click)="updatePlayer(left_winger)" (click)="openLeftWinger()" src="{{ left_winger.card }}" alt="left winger">
    <div class="card" [class.legend_font]="is_LegendCard(left_winger)" [class.standard_font]="!is_LegendCard(left_winger)">
       <h1 class="name" (click)="openLeftWinger()" style="margin-top: -167px;">{{ left_winger.name }}</h1>
-      <h2 class="rating" (click)="openLeftWinger()" style="margin-left: 8px; margin-top: -7px;">{{ left_winger.overall }}</h2>
-      <h3 class="position" (click)="openLeftWinger()" style="margin-left: 42px; margin-top: -32px;">LW</h3>
+      <h2 class="rating ratingStyle" (click)="openLeftWinger()">{{ left_winger.overall }}</h2>
+      <h3 class="position positionStyle" (click)="openLeftWinger()">LW</h3>
     
       <img (click)="openLeftWinger()" width="52px" height="58px" *ngIf="left_winger.image" [src]="left_winger.image" class="image imgStyle">
       <img width="27px" height="15px" class="nationStyle=" src="{{ left_winger.nation }}" >
@@ -135,8 +135,8 @@
    <img class="card" (click)="updatePlayer(right_winger)" (click)="openRightWinger()" src="{{ right_winger.card }}" alt="right winger">
    <div class="card" [class.legend_font]="is_LegendCard(right_winger)" [class.standard_font]="!is_LegendCard(right_winger)">
       <h1 class="name" (click)="openRightWinger()" style="margin-top: -167px;">{{ right_winger.name }}</h1>
-      <h2 class="rating" (click)="openRightWinger()" style="margin-left: 8px; margin-top: -7px;">{{ right_winger.overall }}</h2>
-      <h3 class="position" (click)="openRightWinger()" style="margin-left: 42px; margin-top: -32px;">RW</h3>
+      <h2 class="rating ratingStyle" (click)="openRightWinger()">{{ right_winger.overall }}</h2>
+      <h3 class="position positionStyle" (click)="openRightWinger()">RW</h3>
        
       <img (click)="openRightWinger()" width="52px" height="58px" *ngIf="right_winger.image" [src]="right_winger.image" class="image imgStyle">
       <img width="27px" height="15px" class="nationStyle" src="{{ right_winger.nation }}" >
@@ -160,8 +160,8 @@
    <img class="card" (click)="updatePlayer(lcm)" (click)="openLCM()" src="{{ lcm.card }}" alt="lcm">
    <div class="card" [class.legend_font]="is_LegendCard(lcm)" [class.standard_font]="!is_LegendCard(lcm)">
       <h1 class="name" (click)="openLCM()" style="margin-top: -167px;">{{ lcm.name }}</h1>
-      <h2 class="rating" (click)="openLCM()" style="margin-left: 8px; margin-top: -7px;">{{ lcm.overall }}</h2>
-      <h3 class="position" (click)="openLCM()" style="margin-left: 42px; margin-top: -32px;">CM</h3>
+      <h2 class="rating ratingStyle" (click)="openLCM()">{{ lcm.overall }}</h2>
+      <h3 class="position positionStyle" (click)="openLCM()">CM</h3>
           
       <img (click)="openLCM()" width="52px" height="58px" *ngIf="lcm.image" [src]="lcm.image" class="image imgStyle">
       <img width="27px" height="15px" class="nationStyle" src="{{ lcm.nation }}" >
@@ -184,8 +184,8 @@
    <img class="card" (click)="updatePlayer(rcm)" (click)="openRCM()" src="{{ rcm.card }}" alt="rcm">
    <div class="card" [class.legend_font]="is_LegendCard(rcm)" [class.standard_font]="!is_LegendCard(rcm)">
       <h1 class="name" (click)="openRCM()" style="margin-top: -167px;">{{ rcm.name }}</h1>
-      <h2 class="rating" (click)="openRCM()" style="margin-left: 8px; margin-top: -7px;">{{ rcm.overall }}</h2>
-      <h3 class="position" (click)="openRCM()" style="margin-left: 42px; margin-top: -32px;">CM</h3>
+      <h2 class="rating ratingStyle" (click)="openRCM()">{{ rcm.overall }}</h2>
+      <h3 class="position positionStyle" (click)="openRCM()">CM</h3>
              
       <img (click)="openRCM()" width="52px" height="58px" *ngIf="rcm.image" [src]="rcm.image" class="image imgStyle">
       <img width="27px" height="15px" class="nationStyle" src="{{ rcm.nation }}" >
@@ -212,8 +212,8 @@
    <img class="card" (click)="updatePlayer(cdm)" (click)="openCDM()" src="{{ cdm.card }}" alt="cdm">
    <div class="card" [class.legend_font]="is_LegendCard(cdm)" [class.standard_font]="!is_LegendCard(cdm)">
       <h1 class="name" (click)="openCDM()" style="margin-top: -167px;">{{ cdm.name }}</h1>
-      <h2 class="rating" (click)="openCDM()" style="margin-left: 8px; margin-top: -7px;">{{ cdm.overall }}</h2>
-      <h3 class="position" (click)="openCDM()" style="margin-left: 42px; margin-top: -32px;">CDM</h3>
+      <h2 class="rating ratingStyle" (click)="openCDM()">{{ cdm.overall }}</h2>
+      <h3 class="position positionStyle" (click)="openCDM()">CDM</h3>
                 
       <img (click)="openCDM()" width="52px" height="58px" *ngIf="cdm.image" [src]="cdm.image" class="image imgStyle">
       <img width="27px" height="15px" class="nationStyle" src="{{ cdm.nation }}" >
@@ -237,8 +237,8 @@
    <img class="card" (click)="updatePlayer(lb)" (click)="openLB()" src="{{ lb.card }}" alt="lb">
    <div class="card" [class.legend_font]="is_LegendCard(lb)" [class.standard_font]="!is_LegendCard(lb)">
       <h1 class="name" (click)="openLB()" style="margin-top: -167px;">{{ lb.name }}</h1>
-      <h2 class="rating" (click)="openLB()" style="margin-left: 8px; margin-top: -7px;">{{ lb.overall }}</h2>
-      <h3 class="position" (click)="openLB()" style="margin-left: 42px; margin-top: -32px;">LB</h3>
+      <h2 class="rating ratingStyle" (click)="openLB()">{{ lb.overall }}</h2>
+      <h3 class="position positionStyle" (click)="openLB()">LB</h3>
                    
       <img (click)="openLB()" width="52px" height="58px" *ngIf="lb.image" [src]="lb.image" class="image imgStyle">
       <img width="27px" height="15px" class="nationStyle" src="{{ lb.nation }}" >
@@ -262,8 +262,8 @@
    <img class="card" (click)="updatePlayer(lcb)" (click)="openLCB()" src="{{ lcb.card }}" alt="lcb">
    <div class="card" [class.legend_font]="is_LegendCard(lcb)" [class.standard_font]="!is_LegendCard(lcb)">
       <h1 class="name" (click)="openLCB()" style="margin-top: -167px;">{{ lcb.name }}</h1>
-      <h2 class="rating" (click)="openLCB()" style="margin-left: 8px; margin-top: -7px;">{{ lcb.overall }}</h2>
-      <h3 class="position" (click)="openLCB()" style="margin-left: 42px; margin-top: -32px;">CB</h3>
+      <h2 class="rating ratingStyle" (click)="openLCB()">{{ lcb.overall }}</h2>
+      <h3 class="position positionStyle" (click)="openLCB()">CB</h3>
                       
       <img (click)="openLCB()" width="52px" height="58px" *ngIf="lcb.image" [src]="lcb.image" class="image imgStyle">
       <img width="27px" height="15px" class="nationStyle" src="{{ lcb.nation }}" >
@@ -288,8 +288,8 @@
    <img class="card" (click)="updatePlayer(rcb)" (click)="openRCB()" src="{{ rcb.card }}" alt="rcb">
    <div class="card" [class.legend_font]="is_LegendCard(rcb)" [class.standard_font]="!is_LegendCard(rcb)">
       <h1 class="name" (click)="openRCB()" style="margin-top: -167px;">{{ rcb.name }}</h1>
-      <h2 class="rating" (click)="openRCB()" style="margin-left: 8px; margin-top: -7px;">{{ rcb.overall }}</h2>
-      <h3 class="position" (click)="openRCB()" style="margin-left: 42px; margin-top: -32px;">CB</h3>
+      <h2 class="rating ratingStyle" (click)="openRCB()">{{ rcb.overall }}</h2>
+      <h3 class="position positionStyle" (click)="openRCB()">CB</h3>
                          
       <img (click)="openRCB()" width="52px" height="58px" *ngIf="rcb.image" [src]="rcb.image" class="image imgStyle">
       <img width="27px" height="15px" class="nationStyle" src="{{ rcb.nation }}" >
@@ -312,8 +312,8 @@
    <img class="card" (click)="updatePlayer(rb)" (click)="openRB()" src="{{ rb.card }}" alt="rb">
    <div class="card" [class.legend_font]="is_LegendCard(rb)" [class.standard_font]="!is_LegendCard(rb)">
       <h1 class="name" (click)="openRB()" style="margin-top: -167px;">{{ rb.name }}</h1>
-      <h2 class="rating" (click)="openRB()" style="margin-left: 8px; margin-top: -7px;">{{ rb.overall }}</h2>
-      <h3 class="position" (click)="openRB()" style="margin-left: 42px; margin-top: -32px;">RB</h3>
+      <h2 class="rating ratingStyle" (click)="openRB()">{{ rb.overall }}</h2>
+      <h3 class="position positionStyle" (click)="openRB()">RB</h3>
                             
       <img (click)="openRB()" width="52px" height="58px" *ngIf="rb.image" [src]="rb.image" class="image imgStyle">
       <img width="27px" height="15px" class="nationStyle" src="{{ rb.nation }}" >
@@ -337,8 +337,8 @@
    <img class="card" (click)="updatePlayer(gk)" (click)="openGK()" src="{{ gk.card }}" alt="gk">
    <div class="card" [class.legend_font]="is_LegendCard(gk)" [class.standard_font]="!is_LegendCard(gk)">
       <h1 class="name" (click)="openGK()" style="margin-top: -167px;">{{ gk.name }}</h1>
-      <h2 class="rating" (click)="openGK()" style="margin-left: 8px; margin-top: -7px;">{{ gk.overall }}</h2>
-      <h3 class="position" (click)="openGK()" style="margin-left: 42px; margin-top: -32px;">GK</h3>
+      <h2 class="rating ratingStyle" (click)="openGK()">{{ gk.overall }}</h2>
+      <h3 class="position positionStyle" (click)="openGK()">GK</h3>
                             
       <img (click)="openGK()" width="52px" height="58px" *ngIf="gk.image" [src]="gk.image" class="image imgStyle">
       <img width="27px" height="15px" class="nationStyle" src="{{ gk.nation }}" >

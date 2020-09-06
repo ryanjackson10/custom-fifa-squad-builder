@@ -31,7 +31,7 @@
       </mat-form-field>
       <p style="margin-top: -42.5px; margin-left: 120px;">OR</p>
       <input (change)="handleNationInput($event.target.files)" type="file" id = "nation_files" multiple=50 hidden="hidden"/>
-      <button (click)="chooseNationFiles()" mat-button color="primary" style="background-color: #569CD7; color: white; top: -42.5px; margin-left: 160px; position: relative;">+  Upload Flag</button>
+      <button (click)="chooseNationFiles()" mat-button color="primary" class="uploadFlag">+  Upload Flag</button>
       <!-- <p *ngIf="selectedNation != ''">{{ selectedNation }}</p> -->
       <p style="margin-top: -30px; margin-left: 120px;" *ngIf="visible_nation_file != ''">{{ visible_nation_file }}</p>
     </div>
@@ -46,7 +46,7 @@
       </mat-form-field>
       <p style="margin-top: -42.5px; margin-left: 120px;">OR</p>
       <input (change)="handleClubInput($event.target.files)" type="file" id = "club_files" multiple=50 hidden="hidden"/>
-      <button (click)="chooseClubFiles()" mat-button color="primary" style="background-color: #569CD7; color: white; top: -40px; margin-left: 160px; position: relative;">+  Upload Crest</button>
+      <button (click)="chooseClubFiles()" mat-button color="primary" class="uploadCrest">+  Upload Crest</button>
       <!-- <p *ngIf="selectedNation != ''">{{ selectedNation }}</p> -->
       <p style="margin-top: -30px; margin-left: 120px;" *ngIf="visible_club_file != ''">{{ visible_club_file }}</p>
 
@@ -76,12 +76,12 @@
 
     <div>
       <input (change)="handleFileInput($event.target.files)" type="file" id = "files" multiple=50 hidden="hidden"/>
-      <button (click)="chooseFiles()" mat-button color="primary" style="background-color: #569CD7; color: white; top: -20px; margin-left: 0%; position: relative;">&nbsp;&nbsp;&nbsp;&nbsp;+  Upload Player Image&nbsp;&nbsp;&nbsp;&nbsp;</button>
+      <button (click)="chooseFiles()" mat-button color="primary" class="uploadImage">&nbsp;&nbsp;&nbsp;&nbsp;+  Upload Player Image&nbsp;&nbsp;&nbsp;&nbsp;</button>
       <p style="margin-top: 10px; margin-left: 20px;" *ngIf="visible_player_file != ''">{{ visible_player_file }}</p>
     <!-- <button (click)="updatePlayer()" mat-button color="primary" style="background-color: #5FA784; color: white;">UPDATE</button> -->
     <!-- <button (click)="updatePlayer()" mat-button color="primary" style="background-color: #5FA784; color: white;">Close</button> -->
       </div>
-      <div style="margin-left: 17%; margin-top: 20px; margin-bottom: -10000px;">
+      <div class="format">
         <form>
           <mat-form-field appearance="fill" style="width: 80px;">
               <mat-label>Overall</mat-label>
@@ -92,7 +92,7 @@
 
 
         <form>
-          <mat-form-field appearance="fill" style="width: 80px; margin-left: -100px;">
+          <mat-form-field appearance="fill" class="column1">
               <mat-label>{{ returnFirstStat(data) }}</mat-label>
               <input id = "pace" matInput placeholder="">
           </mat-form-field>
@@ -100,14 +100,14 @@
 
 
         <form>
-          <mat-form-field appearance="fill" style="width: 80px; margin-left: -100px;">
+          <mat-form-field appearance="fill" class="column1">
               <mat-label>{{ returnSecondStat(data) }}</mat-label>
               <input id = "shooting" matInput placeholder="">
           </mat-form-field>
         </form>
 
         <form>
-          <mat-form-field appearance="fill" style="width: 80px; margin-left: -100px;">
+          <mat-form-field appearance="fill" class="column1">
               <mat-label>{{ returnThirdStat(data) }}</mat-label>
               <input id = "passing" matInput placeholder="">
           </mat-form-field>
@@ -115,14 +115,14 @@
 
 
         <form>
-          <mat-form-field appearance="fill" style="width: 80px; margin-left: 100px; top: -243px;">
+          <mat-form-field appearance="fill" class="column2">
               <mat-label>{{ returnFourthStat(data) }}</mat-label>
               <input id = "dribbling" matInput placeholder="">
           </mat-form-field>
         </form>
 
         <form>
-          <mat-form-field appearance="fill" style="width: 80px; margin-left: 100px; top: -243px;">
+          <mat-form-field appearance="fill" class="column2">
               <mat-label>{{ returnFifthStat(data) }}</mat-label>
               <input id = "defending" matInput placeholder="">
           </mat-form-field>
@@ -130,7 +130,7 @@
 
 
         <form>
-          <mat-form-field appearance="fill" style="width: 80px; margin-left: 100px; top: -243px;">
+          <mat-form-field appearance="fill" class="column2">
               <mat-label>{{ returnSixthStat(data) }}</mat-label>
               <input id = "heading" matInput placeholder="">
           </mat-form-field>
