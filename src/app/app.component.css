@@ -293,7 +293,84 @@
     margin-top: -7px;
 }
 
+.imagesCommon {
+    width: 5px;
+    z-index: -5;
+}
 
+.one50 {
+    height: 150px;
+}
+
+.two20 {
+    height: 220px;
+}
+
+.two50 {
+    height: 250px;
+}
+
+.three30 {
+    height: 330px;
+}
+
+.three50 {
+    height: 350px;
+}
+
+.four50 {
+    height: 450px;
+}
+
+.one80 {
+    height: 180px;
+}
+
+.st {
+    margin-top: 15px; 
+    position: absolute; 
+    z-index: 4;
+}
+
+.lw {
+    margin-left: -300px; margin-top: 35px; position: absolute; z-index: 10;
+}
+
+.rw {
+    margin-left: 300px; margin-top: 35px; position: absolute; z-index: 4;
+}
+
+.lcm {
+    margin-left: -200px; margin-top: 300px; position: absolute;
+}
+
+.rcm {
+    margin-left: 200px; margin-top: 300px; position: absolute;
+}
+
+.cdm {
+    margin-left: 0px; margin-top: 460px; position: absolute;
+}
+
+.lb {
+    margin-left: -450px; margin-top: 620px; position: absolute;
+}
+
+.lcb {
+    margin-left: -130px; margin-top: 670px; position: absolute;
+}
+
+.rcb {
+    margin-left: 170px; margin-top: 670px; position: absolute;
+}
+
+.rb {
+    margin-left: 520px; margin-top: 620px; position: absolute;
+}
+
+.gk {
+    margin-left: 30px; margin-top: 900px; position: absolute;
+}
 
 
 

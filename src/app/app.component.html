@@ -81,282 +81,284 @@
 
 <!-- STRIKER -->
 <div>
-<div style="margin-top: 15px; position: absolute; z-index: 4;">
-    <img class="card" (click)="updatePlayer(striker)" (click)="openDialog()" src="{{ striker.card }}" alt="striker">
-    <div class="card" [class.legend_font]="is_LegendCard(striker)" [class.standard_font]="!is_LegendCard(striker)">
-       <h1 class="name" (click)="openDialog()" style="margin-top: -167px;">{{ striker.name }}</h1>
-       <h2 class="rating ratingStyle" (click)="openDialog()">{{ striker.overall }}</h2>
-       <h3 class="position positionStyle" (click)="openDialog()">ST</h3>
-     
-       <img (click)="openDialog()" width="52px" height="58px" *ngIf="striker.image" [src]="striker.image" class="image imgStyle">
-       <img width="27px" height="15px" class="nationStyle" src="{{ striker.nation }}" >
-       <img height="24 px" class="clubStyle" src="{{ striker.club }}" >
-       <div [class.legend_font]="is_LegendCard(striker)" [class.standard_font]="!is_LegendCard(striker)">
-         <p *ngIf="striker.pace" class="genericStatsStyle pace" >{{ striker.pace }} PAC</p>
-         <p *ngIf="striker.shooting" class="genericStatsStyle shooting">{{ striker.shooting }} SHO</p>
-         <p *ngIf="striker.passing" class="genericStatsStyle passing">{{ striker.passing }} PAS</p>
-         <p *ngIf="striker.dribbling" class="genericStatsStyle dribbling">{{ striker.dribbling }} DRI</p>
-         <p *ngIf="striker.defending" class="genericStatsStyle defending">{{ striker.defending }} DEF</p>
-         <p *ngIf="striker.heading" class="genericStatsStyle heading">{{ striker.heading }} HEA</p>
-      </div>
-
-    </div>
-    </div>
-   </div>
-
-<!-- LEFT WINGER -->
-<div>
-<div style="margin-left: -300px; margin-top: 35px; position: absolute; z-index: 10;">
-   <img class="card" (click)="updatePlayer(left_winger)" (click)="openLeftWinger()" src="{{ left_winger.card }}" alt="left winger">
-   <div class="card" [class.legend_font]="is_LegendCard(left_winger)" [class.standard_font]="!is_LegendCard(left_winger)">
-      <h1 class="name" (click)="openLeftWinger()" style="margin-top: -167px;">{{ left_winger.name }}</h1>
-      <h2 class="rating ratingStyle" (click)="openLeftWinger()">{{ left_winger.overall }}</h2>
-      <h3 class="position positionStyle" (click)="openLeftWinger()">LW</h3>
+   <div class="st">
+      <img class="card" (click)="updatePlayer(striker)" (click)="openDialog()" src="{{ striker.card }}" alt="striker">
+      <div class="card" [class.legend_font]="is_LegendCard(striker)" [class.standard_font]="!is_LegendCard(striker)">
+         <h1 class="name" (click)="openDialog()" style="margin-top: -167px;">{{ striker.name }}</h1>
+         <h2 class="rating ratingStyle" (click)="openDialog()">{{ striker.overall }}</h2>
+         <h3 class="position positionStyle" (click)="openDialog()">ST</h3>
+      
+         <img (click)="openDialog()" width="52px" height="58px" *ngIf="striker.image" [src]="striker.image" class="image imgStyle">
+         <img width="27px" height="15px" class="nationStyle" src="{{ striker.nation }}" >
+         <img height="24 px" class="clubStyle" src="{{ striker.club }}" >
+         <div [class.legend_font]="is_LegendCard(striker)" [class.standard_font]="!is_LegendCard(striker)">
+           <p *ngIf="striker.pace" class="genericStatsStyle pace" >{{ striker.pace }} PAC</p>
+           <p *ngIf="striker.shooting" class="genericStatsStyle shooting">{{ striker.shooting }} SHO</p>
+           <p *ngIf="striker.passing" class="genericStatsStyle passing">{{ striker.passing }} PAS</p>
+           <p *ngIf="striker.dribbling" class="genericStatsStyle dribbling">{{ striker.dribbling }} DRI</p>
+           <p *ngIf="striker.defending" class="genericStatsStyle defending">{{ striker.defending }} DEF</p>
+           <p *ngIf="striker.heading" class="genericStatsStyle heading">{{ striker.heading }} HEA</p>
+        </div>
     
-      <img (click)="openLeftWinger()" width="52px" height="58px" *ngIf="left_winger.image" [src]="left_winger.image" class="image imgStyle">
-      <img width="27px" height="15px" class="nationStyle=" src="{{ left_winger.nation }}" >
-      <img height="24 px" class="clubStyle" src="{{ left_winger.club }}" >
-      <div [class.legend_font]="is_LegendCard(left_winger)" [class.standard_font]="!is_LegendCard(left_winger)">
-         <p *ngIf="left_winger.pace" class="genericStatsStyle pace" >{{ left_winger.pace }} PAC</p>
-         <p *ngIf="left_winger.shooting" class="genericStatsStyle shooting">{{ left_winger.shooting }} SHO</p>
-         <p *ngIf="left_winger.passing" class="genericStatsStyle passing">{{ left_winger.passing }} PAS</p>
-         <p *ngIf="left_winger.dribbling" class="genericStatsStyle dribbling">{{ left_winger.dribbling }} DRI</p>
-         <p *ngIf="left_winger.defending" class="genericStatsStyle defending">{{ left_winger.defending }} DEF</p>
-         <p *ngIf="left_winger.heading" class="genericStatsStyle heading">{{ left_winger.heading }} HEA</p>
-   
-
-   </div>
-   </div>
-</div>
-
-   <!-- RIGHT WINGER -->
+      </div>
+      </div>
+     </div>
+    
+   <!-- LEFT WINGER -->
    <div>
-<div style="margin-left: 300px; margin-top: 35px; position: absolute; z-index: 4;">
-   <img class="card" (click)="updatePlayer(right_winger)" (click)="openRightWinger()" src="{{ right_winger.card }}" alt="right winger">
-   <div class="card" [class.legend_font]="is_LegendCard(right_winger)" [class.standard_font]="!is_LegendCard(right_winger)">
-      <h1 class="name" (click)="openRightWinger()" style="margin-top: -167px;">{{ right_winger.name }}</h1>
-      <h2 class="rating ratingStyle" (click)="openRightWinger()">{{ right_winger.overall }}</h2>
-      <h3 class="position positionStyle" (click)="openRightWinger()">RW</h3>
+   <div class="lw">
+     <img class="card" (click)="updatePlayer(left_winger)" (click)="openLeftWinger()" src="{{ left_winger.card }}" alt="left winger">
+     <div class="card" [class.legend_font]="is_LegendCard(left_winger)" [class.standard_font]="!is_LegendCard(left_winger)">
+        <h1 class="name" (click)="openLeftWinger()" style="margin-top: -167px;">{{ left_winger.name }}</h1>
+        <h2 class="rating ratingStyle" (click)="openLeftWinger()">{{ left_winger.overall }}</h2>
+        <h3 class="position positionStyle" (click)="openLeftWinger()">LW</h3>
+     
+        <img (click)="openLeftWinger()" width="52px" height="58px" *ngIf="left_winger.image" [src]="left_winger.image" class="image imgStyle">
+        <img width="27px" height="15px" class="nationStyle=" src="{{ left_winger.nation }}" >
+        <img height="24 px" class="clubStyle" src="{{ left_winger.club }}" >
+        <div [class.legend_font]="is_LegendCard(left_winger)" [class.standard_font]="!is_LegendCard(left_winger)">
+           <p *ngIf="left_winger.pace" class="genericStatsStyle pace" >{{ left_winger.pace }} PAC</p>
+           <p *ngIf="left_winger.shooting" class="genericStatsStyle shooting">{{ left_winger.shooting }} SHO</p>
+           <p *ngIf="left_winger.passing" class="genericStatsStyle passing">{{ left_winger.passing }} PAS</p>
+           <p *ngIf="left_winger.dribbling" class="genericStatsStyle dribbling">{{ left_winger.dribbling }} DRI</p>
+           <p *ngIf="left_winger.defending" class="genericStatsStyle defending">{{ left_winger.defending }} DEF</p>
+           <p *ngIf="left_winger.heading" class="genericStatsStyle heading">{{ left_winger.heading }} HEA</p>
+    
+    
+     </div>
+     </div>
+   </div>
+    
+     <!-- RIGHT WINGER -->
+     <div>
+   <div class="rw">
+     <img class="card" (click)="updatePlayer(right_winger)" (click)="openRightWinger()" src="{{ right_winger.card }}" alt="right winger">
+     <div class="card" [class.legend_font]="is_LegendCard(right_winger)" [class.standard_font]="!is_LegendCard(right_winger)">
+        <h1 class="name" (click)="openRightWinger()" style="margin-top: -167px;">{{ right_winger.name }}</h1>
+        <h2 class="rating ratingStyle" (click)="openRightWinger()">{{ right_winger.overall }}</h2>
+        <h3 class="position positionStyle" (click)="openRightWinger()">RW</h3>
+        
+        <img (click)="openRightWinger()" width="52px" height="58px" *ngIf="right_winger.image" [src]="right_winger.image" class="image imgStyle">
+        <img width="27px" height="15px" class="nationStyle" src="{{ right_winger.nation }}" >
+        <img height="24 px" class="clubStyle" src="{{ right_winger.club }}" >
+        <div [class.legend_font]="is_LegendCard(right_winger)" [class.standard_font]="!is_LegendCard(right_winger)">
+        <p *ngIf="right_winger.pace" class="genericStatsStyle pace" >{{ right_winger.pace }} PAC</p>
+        <p *ngIf="right_winger.shooting" class="genericStatsStyle shooting">{{ right_winger.shooting }} SHO</p>
+        <p *ngIf="right_winger.passing" class="genericStatsStyle passing">{{ right_winger.passing }} PAS</p>
+        <p *ngIf="right_winger.dribbling" class="genericStatsStyle dribbling">{{ right_winger.dribbling }} DRI</p>
+        <p *ngIf="right_winger.defending" class="genericStatsStyle defending">{{ right_winger.defending }} DEF</p>
+        <p *ngIf="right_winger.heading" class="genericStatsStyle heading">{{ right_winger.heading }} HEA</p>
+    
+    
+   </div>
+   </div>
+   </div>
+    
+   <!-- LEFT CENTRAL MIDFIELDER -->
+   <div>
+   <div class="lcm">
+     <img class="card" (click)="updatePlayer(lcm)" (click)="openLCM()" src="{{ lcm.card }}" alt="lcm">
+     <div class="card" [class.legend_font]="is_LegendCard(lcm)" [class.standard_font]="!is_LegendCard(lcm)">
+        <h1 class="name" (click)="openLCM()" style="margin-top: -167px;">{{ lcm.name }}</h1>
+        <h2 class="rating ratingStyle" (click)="openLCM()">{{ lcm.overall }}</h2>
+        <h3 class="position positionStyle" (click)="openLCM()">CM</h3>
+           
+        <img (click)="openLCM()" width="52px" height="58px" *ngIf="lcm.image" [src]="lcm.image" class="image imgStyle">
+        <img width="27px" height="15px" class="nationStyle" src="{{ lcm.nation }}" >
+        <img height="24 px" class="clubStyle" src="{{ lcm.club }}" >
+        <div [class.legend_font]="is_LegendCard(lcm)" [class.standard_font]="!is_LegendCard(lcm)">
+        <p *ngIf="lcm.pace" class="genericStatsStyle pace" >{{ lcm.pace }} PAC</p>
+        <p *ngIf="lcm.shooting" class="genericStatsStyle shooting">{{ lcm.shooting }} SHO</p>
+        <p *ngIf="lcm.passing" class="genericStatsStyle passing">{{ lcm.passing }} PAS</p>
+        <p *ngIf="lcm.dribbling" class="genericStatsStyle dribbling">{{ lcm.dribbling }} DRI</p>
+        <p *ngIf="lcm.defending" class="genericStatsStyle defending">{{ lcm.defending }} DEF</p>
+        <p *ngIf="lcm.heading" class="genericStatsStyle heading">{{ lcm.heading }} HEA</p>
        
-      <img (click)="openRightWinger()" width="52px" height="58px" *ngIf="right_winger.image" [src]="right_winger.image" class="image imgStyle">
-      <img width="27px" height="15px" class="nationStyle" src="{{ right_winger.nation }}" >
-      <img height="24 px" class="clubStyle" src="{{ right_winger.club }}" >
-      <div [class.legend_font]="is_LegendCard(right_winger)" [class.standard_font]="!is_LegendCard(right_winger)">
-      <p *ngIf="right_winger.pace" class="genericStatsStyle pace" >{{ right_winger.pace }} PAC</p>
-      <p *ngIf="right_winger.shooting" class="genericStatsStyle shooting">{{ right_winger.shooting }} SHO</p>
-      <p *ngIf="right_winger.passing" class="genericStatsStyle passing">{{ right_winger.passing }} PAS</p>
-      <p *ngIf="right_winger.dribbling" class="genericStatsStyle dribbling">{{ right_winger.dribbling }} DRI</p>
-      <p *ngIf="right_winger.defending" class="genericStatsStyle defending">{{ right_winger.defending }} DEF</p>
-      <p *ngIf="right_winger.heading" class="genericStatsStyle heading">{{ right_winger.heading }} HEA</p>
-   
-   
-</div>
-</div>
-</div>
-
-<!-- LEFT CENTRAL MIDFIELDER -->
-<div>
-<div style="margin-left: -200px; margin-top: 300px; position: absolute;">
-   <img class="card" (click)="updatePlayer(lcm)" (click)="openLCM()" src="{{ lcm.card }}" alt="lcm">
-   <div class="card" [class.legend_font]="is_LegendCard(lcm)" [class.standard_font]="!is_LegendCard(lcm)">
-      <h1 class="name" (click)="openLCM()" style="margin-top: -167px;">{{ lcm.name }}</h1>
-      <h2 class="rating ratingStyle" (click)="openLCM()">{{ lcm.overall }}</h2>
-      <h3 class="position positionStyle" (click)="openLCM()">CM</h3>
+       
+     </div>
+     </div>
+     </div>
+     <!-- RIGHT CENTRAL MIDFIELDER -->
+     <div>
+   <div class="rcm">
+     <img class="card" (click)="updatePlayer(rcm)" (click)="openRCM()" src="{{ rcm.card }}" alt="rcm">
+     <div class="card" [class.legend_font]="is_LegendCard(rcm)" [class.standard_font]="!is_LegendCard(rcm)">
+        <h1 class="name" (click)="openRCM()" style="margin-top: -167px;">{{ rcm.name }}</h1>
+        <h2 class="rating ratingStyle" (click)="openRCM()">{{ rcm.overall }}</h2>
+        <h3 class="position positionStyle" (click)="openRCM()">CM</h3>
+              
+        <img (click)="openRCM()" width="52px" height="58px" *ngIf="rcm.image" [src]="rcm.image" class="image imgStyle">
+        <img width="27px" height="15px" class="nationStyle" src="{{ rcm.nation }}" >
+        <img height="24 px" class="clubStyle" src="{{ rcm.club }}" >
+        <div [class.legend_font]="is_LegendCard(rcm)" [class.standard_font]="!is_LegendCard(rcm)">
+        <p *ngIf="rcm.pace" class="genericStatsStyle pace" >{{ rcm.pace }} PAC</p>
+        <p *ngIf="rcm.shooting" class="genericStatsStyle shooting">{{ rcm.shooting }} SHO</p>
+        <p *ngIf="rcm.passing" class="genericStatsStyle passing">{{ rcm.passing }} PAS</p>
+        <p *ngIf="rcm.dribbling" class="genericStatsStyle dribbling">{{ rcm.dribbling }} DRI</p>
+        <p *ngIf="rcm.defending" class="genericStatsStyle defending">{{ rcm.defending }} DEF</p>
+        <p *ngIf="rcm.heading" class="genericStatsStyle heading">{{ rcm.heading }} HEA</p>
           
-      <img (click)="openLCM()" width="52px" height="58px" *ngIf="lcm.image" [src]="lcm.image" class="image imgStyle">
-      <img width="27px" height="15px" class="nationStyle" src="{{ lcm.nation }}" >
-      <img height="24 px" class="clubStyle" src="{{ lcm.club }}" >
-      <div [class.legend_font]="is_LegendCard(lcm)" [class.standard_font]="!is_LegendCard(lcm)">
-      <p *ngIf="lcm.pace" class="genericStatsStyle pace" >{{ lcm.pace }} PAC</p>
-      <p *ngIf="lcm.shooting" class="genericStatsStyle shooting">{{ lcm.shooting }} SHO</p>
-      <p *ngIf="lcm.passing" class="genericStatsStyle passing">{{ lcm.passing }} PAS</p>
-      <p *ngIf="lcm.dribbling" class="genericStatsStyle dribbling">{{ lcm.dribbling }} DRI</p>
-      <p *ngIf="lcm.defending" class="genericStatsStyle defending">{{ lcm.defending }} DEF</p>
-      <p *ngIf="lcm.heading" class="genericStatsStyle heading">{{ lcm.heading }} HEA</p>
-      
-      
+          
+     </div>
+     </div>
    </div>
+   <!-- HOLDING MIDFIELDER -->
+    
+   <div *ngIf="!isStrikerYet()">
    </div>
-   </div>
-   <!-- RIGHT CENTRAL MIDFIELDER -->
+    
    <div>
-<div style="margin-left: 200px; margin-top: 300px; position: absolute;">
-   <img class="card" (click)="updatePlayer(rcm)" (click)="openRCM()" src="{{ rcm.card }}" alt="rcm">
-   <div class="card" [class.legend_font]="is_LegendCard(rcm)" [class.standard_font]="!is_LegendCard(rcm)">
-      <h1 class="name" (click)="openRCM()" style="margin-top: -167px;">{{ rcm.name }}</h1>
-      <h2 class="rating ratingStyle" (click)="openRCM()">{{ rcm.overall }}</h2>
-      <h3 class="position positionStyle" (click)="openRCM()">CM</h3>
+   <div class="cdm">
+     <img class="card" (click)="updatePlayer(cdm)" (click)="openCDM()" src="{{ cdm.card }}" alt="cdm">
+     <div class="card" [class.legend_font]="is_LegendCard(cdm)" [class.standard_font]="!is_LegendCard(cdm)">
+        <h1 class="name" (click)="openCDM()" style="margin-top: -167px;">{{ cdm.name }}</h1>
+        <h2 class="rating ratingStyle" (click)="openCDM()">{{ cdm.overall }}</h2>
+        <h3 class="position positionStyle" (click)="openCDM()">CDM</h3>
+                 
+        <img (click)="openCDM()" width="52px" height="58px" *ngIf="cdm.image" [src]="cdm.image" class="image imgStyle">
+        <img width="27px" height="15px" class="nationStyle" src="{{ cdm.nation }}" >
+        <img height="24 px" class="clubStyle" src="{{ cdm.club }}" >
+        <div [class.legend_font]="is_LegendCard(cdm)" [class.standard_font]="!is_LegendCard(cdm)">
+        <p *ngIf="cdm.pace" class="genericStatsStyle pace" >{{ cdm.pace }} PAC</p>
+        <p *ngIf="cdm.shooting" class="genericStatsStyle shooting">{{ cdm.shooting }} SHO</p>
+        <p *ngIf="cdm.passing" class="genericStatsStyle passing">{{ cdm.passing }} PAS</p>
+        <p *ngIf="cdm.dribbling" class="genericStatsStyle dribbling">{{ cdm.dribbling }} DRI</p>
+        <p *ngIf="cdm.defending" class="genericStatsStyle defending">{{ cdm.defending }} DEF</p>
+        <p *ngIf="cdm.heading" class="genericStatsStyle heading">{{ cdm.heading }} HEA</p>
              
-      <img (click)="openRCM()" width="52px" height="58px" *ngIf="rcm.image" [src]="rcm.image" class="image imgStyle">
-      <img width="27px" height="15px" class="nationStyle" src="{{ rcm.nation }}" >
-      <img height="24 px" class="clubStyle" src="{{ rcm.club }}" >
-      <div [class.legend_font]="is_LegendCard(rcm)" [class.standard_font]="!is_LegendCard(rcm)">
-      <p *ngIf="rcm.pace" class="genericStatsStyle pace" >{{ rcm.pace }} PAC</p>
-      <p *ngIf="rcm.shooting" class="genericStatsStyle shooting">{{ rcm.shooting }} SHO</p>
-      <p *ngIf="rcm.passing" class="genericStatsStyle passing">{{ rcm.passing }} PAS</p>
-      <p *ngIf="rcm.dribbling" class="genericStatsStyle dribbling">{{ rcm.dribbling }} DRI</p>
-      <p *ngIf="rcm.defending" class="genericStatsStyle defending">{{ rcm.defending }} DEF</p>
-      <p *ngIf="rcm.heading" class="genericStatsStyle heading">{{ rcm.heading }} HEA</p>
-         
-         
+             
+     </div>
+     </div>
    </div>
-   </div>
-</div>
-<!-- HOLDING MIDFIELDER -->
-
-<div *ngIf="!isStrikerYet()">
-</div>
-
-<div>
-<div style="margin-left: 0px; margin-top: 460px; position: absolute;">
-   <img class="card" (click)="updatePlayer(cdm)" (click)="openCDM()" src="{{ cdm.card }}" alt="cdm">
-   <div class="card" [class.legend_font]="is_LegendCard(cdm)" [class.standard_font]="!is_LegendCard(cdm)">
-      <h1 class="name" (click)="openCDM()" style="margin-top: -167px;">{{ cdm.name }}</h1>
-      <h2 class="rating ratingStyle" (click)="openCDM()">{{ cdm.overall }}</h2>
-      <h3 class="position positionStyle" (click)="openCDM()">CDM</h3>
+    
+     <!-- LEFT BACK -->
+     <div>
+   <div class="lb">
+     <img class="card" (click)="updatePlayer(lb)" (click)="openLB()" src="{{ lb.card }}" alt="lb">
+     <div class="card" [class.legend_font]="is_LegendCard(lb)" [class.standard_font]="!is_LegendCard(lb)">
+        <h1 class="name" (click)="openLB()" style="margin-top: -167px;">{{ lb.name }}</h1>
+        <h2 class="rating ratingStyle" (click)="openLB()">{{ lb.overall }}</h2>
+        <h3 class="position positionStyle" (click)="openLB()">LB</h3>
+                    
+        <img (click)="openLB()" width="52px" height="58px" *ngIf="lb.image" [src]="lb.image" class="image imgStyle">
+        <img width="27px" height="15px" class="nationStyle" src="{{ lb.nation }}" >
+        <img height="24 px" class="clubStyle" src="{{ lb.club }}" >
+        <div [class.legend_font]="is_LegendCard(lb)" [class.standard_font]="!is_LegendCard(lb)">
+        <p *ngIf="lb.pace" class="genericStatsStyle pace" >{{ lb.pace }} PAC</p>
+        <p *ngIf="lb.shooting" class="genericStatsStyle shooting">{{ lb.shooting }} SHO</p>
+        <p *ngIf="lb.passing" class="genericStatsStyle passing">{{ lb.passing }} PAS</p>
+        <p *ngIf="lb.dribbling" class="genericStatsStyle dribbling">{{ lb.dribbling }} DRI</p>
+        <p *ngIf="lb.defending" class="genericStatsStyle defending">{{ lb.defending }} DEF</p>
+        <p *ngIf="lb.heading" class="genericStatsStyle heading">{{ lb.heading }} HEA</p>
                 
-      <img (click)="openCDM()" width="52px" height="58px" *ngIf="cdm.image" [src]="cdm.image" class="image imgStyle">
-      <img width="27px" height="15px" class="nationStyle" src="{{ cdm.nation }}" >
-      <img height="24 px" class="clubStyle" src="{{ cdm.club }}" >
-      <div [class.legend_font]="is_LegendCard(cdm)" [class.standard_font]="!is_LegendCard(cdm)">
-      <p *ngIf="cdm.pace" class="genericStatsStyle pace" >{{ cdm.pace }} PAC</p>
-      <p *ngIf="cdm.shooting" class="genericStatsStyle shooting">{{ cdm.shooting }} SHO</p>
-      <p *ngIf="cdm.passing" class="genericStatsStyle passing">{{ cdm.passing }} PAS</p>
-      <p *ngIf="cdm.dribbling" class="genericStatsStyle dribbling">{{ cdm.dribbling }} DRI</p>
-      <p *ngIf="cdm.defending" class="genericStatsStyle defending">{{ cdm.defending }} DEF</p>
-      <p *ngIf="cdm.heading" class="genericStatsStyle heading">{{ cdm.heading }} HEA</p>
-            
-            
+                
+     </div>
+     </div>
    </div>
-   </div>
-</div>
-
-   <!-- LEFT BACK -->
-   <div>
-<div style="margin-left: -450px; margin-top: 620px; position: absolute;">
-   <img class="card" (click)="updatePlayer(lb)" (click)="openLB()" src="{{ lb.card }}" alt="lb">
-   <div class="card" [class.legend_font]="is_LegendCard(lb)" [class.standard_font]="!is_LegendCard(lb)">
-      <h1 class="name" (click)="openLB()" style="margin-top: -167px;">{{ lb.name }}</h1>
-      <h2 class="rating ratingStyle" (click)="openLB()">{{ lb.overall }}</h2>
-      <h3 class="position positionStyle" (click)="openLB()">LB</h3>
-                   
-      <img (click)="openLB()" width="52px" height="58px" *ngIf="lb.image" [src]="lb.image" class="image imgStyle">
-      <img width="27px" height="15px" class="nationStyle" src="{{ lb.nation }}" >
-      <img height="24 px" class="clubStyle" src="{{ lb.club }}" >
-      <div [class.legend_font]="is_LegendCard(lb)" [class.standard_font]="!is_LegendCard(lb)">
-      <p *ngIf="lb.pace" class="genericStatsStyle pace" >{{ lb.pace }} PAC</p>
-      <p *ngIf="lb.shooting" class="genericStatsStyle shooting">{{ lb.shooting }} SHO</p>
-      <p *ngIf="lb.passing" class="genericStatsStyle passing">{{ lb.passing }} PAS</p>
-      <p *ngIf="lb.dribbling" class="genericStatsStyle dribbling">{{ lb.dribbling }} DRI</p>
-      <p *ngIf="lb.defending" class="genericStatsStyle defending">{{ lb.defending }} DEF</p>
-      <p *ngIf="lb.heading" class="genericStatsStyle heading">{{ lb.heading }} HEA</p>
-               
-               
-   </div>
-   </div>
-</div>
-   
-   <!-- LEFT CENTER BACK -->
-   <div>
-<div style="margin-left: -130px; margin-top: 670px; position: absolute;">
-   <img class="card" (click)="updatePlayer(lcb)" (click)="openLCB()" src="{{ lcb.card }}" alt="lcb">
-   <div class="card" [class.legend_font]="is_LegendCard(lcb)" [class.standard_font]="!is_LegendCard(lcb)">
-      <h1 class="name" (click)="openLCB()" style="margin-top: -167px;">{{ lcb.name }}</h1>
-      <h2 class="rating ratingStyle" (click)="openLCB()">{{ lcb.overall }}</h2>
-      <h3 class="position positionStyle" (click)="openLCB()">CB</h3>
+    
+     <!-- LEFT CENTER BACK -->
+     <div>
+   <div class="lcb">
+     <img class="card" (click)="updatePlayer(lcb)" (click)="openLCB()" src="{{ lcb.card }}" alt="lcb">
+     <div class="card" [class.legend_font]="is_LegendCard(lcb)" [class.standard_font]="!is_LegendCard(lcb)">
+        <h1 class="name" (click)="openLCB()" style="margin-top: -167px;">{{ lcb.name }}</h1>
+        <h2 class="rating ratingStyle" (click)="openLCB()">{{ lcb.overall }}</h2>
+        <h3 class="position positionStyle" (click)="openLCB()">CB</h3>
+                       
+        <img (click)="openLCB()" width="52px" height="58px" *ngIf="lcb.image" [src]="lcb.image" class="image imgStyle">
+        <img width="27px" height="15px" class="nationStyle" src="{{ lcb.nation }}" >
+        <img height="24 px" class="clubStyle" src="{{ lcb.club }}" >
+        <div [class.legend_font]="is_LegendCard(lcb)" [class.standard_font]="!is_LegendCard(lcb)">
+        <p *ngIf="lcb.pace" class="genericStatsStyle pace" >{{ lcb.pace }} PAC</p>
+        <p *ngIf="lcb.shooting" class="genericStatsStyle shooting">{{ lcb.shooting }} SHO</p>
+        <p *ngIf="lcb.passing" class="genericStatsStyle passing">{{ lcb.passing }} PAS</p>
+        <p *ngIf="lcb.dribbling" class="genericStatsStyle dribbling">{{ lcb.dribbling }} DRI</p>
+        <p *ngIf="lcb.defending" class="genericStatsStyle defending">{{ lcb.defending }} DEF</p>
+        <p *ngIf="lcb.heading" class="genericStatsStyle heading">{{ lcb.heading }} HEA</p>
                       
-      <img (click)="openLCB()" width="52px" height="58px" *ngIf="lcb.image" [src]="lcb.image" class="image imgStyle">
-      <img width="27px" height="15px" class="nationStyle" src="{{ lcb.nation }}" >
-      <img height="24 px" class="clubStyle" src="{{ lcb.club }}" >
-      <div [class.legend_font]="is_LegendCard(lcb)" [class.standard_font]="!is_LegendCard(lcb)">
-      <p *ngIf="lcb.pace" class="genericStatsStyle pace" >{{ lcb.pace }} PAC</p>
-      <p *ngIf="lcb.shooting" class="genericStatsStyle shooting">{{ lcb.shooting }} SHO</p>
-      <p *ngIf="lcb.passing" class="genericStatsStyle passing">{{ lcb.passing }} PAS</p>
-      <p *ngIf="lcb.dribbling" class="genericStatsStyle dribbling">{{ lcb.dribbling }} DRI</p>
-      <p *ngIf="lcb.defending" class="genericStatsStyle defending">{{ lcb.defending }} DEF</p>
-      <p *ngIf="lcb.heading" class="genericStatsStyle heading">{{ lcb.heading }} HEA</p>
-                     
-                  
+                   
+     </div>
+     </div>
+    
    </div>
+    
+     <!-- RIGHT CENTER BACK -->
+     <div>
+   <div class="rcb">
+     <img class="card" (click)="updatePlayer(rcb)" (click)="openRCB()" src="{{ rcb.card }}" alt="rcb">
+     <div class="card" [class.legend_font]="is_LegendCard(rcb)" [class.standard_font]="!is_LegendCard(rcb)">
+        <h1 class="name" (click)="openRCB()" style="margin-top: -167px;">{{ rcb.name }}</h1>
+        <h2 class="rating ratingStyle" (click)="openRCB()">{{ rcb.overall }}</h2>
+        <h3 class="position positionStyle" (click)="openRCB()">CB</h3>
+                          
+        <img (click)="openRCB()" width="52px" height="58px" *ngIf="rcb.image" [src]="rcb.image" class="image imgStyle">
+        <img width="27px" height="15px" class="nationStyle" src="{{ rcb.nation }}" >
+        <img height="24 px" class="clubStyle" src="{{ rcb.club }}" >
+        <div [class.legend_font]="is_LegendCard(rcb)" [class.standard_font]="!is_LegendCard(rcb)">
+        <p *ngIf="rcb.pace" class="genericStatsStyle pace" >{{ rcb.pace }} PAC</p>
+        <p *ngIf="rcb.shooting" class="genericStatsStyle shooting">{{ rcb.shooting }} SHO</p>
+        <p *ngIf="rcb.passing" class="genericStatsStyle passing">{{ rcb.passing }} PAS</p>
+        <p *ngIf="rcb.dribbling" class="genericStatsStyle dribbling">{{ rcb.dribbling }} DRI</p>
+        <p *ngIf="rcb.defending" class="genericStatsStyle defending">{{ rcb.defending }} DEF</p>
+        <p *ngIf="rcb.heading" class="genericStatsStyle heading">{{ rcb.heading }} HEA</p>
+                      
+                      
+     </div>
+     </div>
    </div>
-
-</div>
-
-   <!-- RIGHT CENTER BACK -->
+   <!-- RIGHT BACK -->
    <div>
-<div style="margin-left: 170px; margin-top: 670px; position: absolute;">
-   <img class="card" (click)="updatePlayer(rcb)" (click)="openRCB()" src="{{ rcb.card }}" alt="rcb">
-   <div class="card" [class.legend_font]="is_LegendCard(rcb)" [class.standard_font]="!is_LegendCard(rcb)">
-      <h1 class="name" (click)="openRCB()" style="margin-top: -167px;">{{ rcb.name }}</h1>
-      <h2 class="rating ratingStyle" (click)="openRCB()">{{ rcb.overall }}</h2>
-      <h3 class="position positionStyle" (click)="openRCB()">CB</h3>
+   <div class="rb">
+     <img class="card" (click)="updatePlayer(rb)" (click)="openRB()" src="{{ rb.card }}" alt="rb">
+     <div class="card" [class.legend_font]="is_LegendCard(rb)" [class.standard_font]="!is_LegendCard(rb)">
+        <h1 class="name" (click)="openRB()" style="margin-top: -167px;">{{ rb.name }}</h1>
+        <h2 class="rating ratingStyle" (click)="openRB()">{{ rb.overall }}</h2>
+        <h3 class="position positionStyle" (click)="openRB()">RB</h3>
+                             
+        <img (click)="openRB()" width="52px" height="58px" *ngIf="rb.image" [src]="rb.image" class="image imgStyle">
+        <img width="27px" height="15px" class="nationStyle" src="{{ rb.nation }}" >
+        <img height="24 px" class="clubStyle" src="{{ rb.club }}" >
+        <div [class.legend_font]="is_LegendCard(rb)" [class.standard_font]="!is_LegendCard(rb)">
+        <p *ngIf="rb.pace" class="genericStatsStyle pace" >{{ rb.pace }} PAC</p>
+        <p *ngIf="rb.shooting" class="genericStatsStyle shooting">{{ rb.shooting }} SHO</p>
+        <p *ngIf="rb.passing" class="genericStatsStyle passing">{{ rb.passing }} PAS</p>
+        <p *ngIf="rb.dribbling" class="genericStatsStyle dribbling">{{ rb.dribbling }} DRI</p>
+        <p *ngIf="rb.defending" class="genericStatsStyle defending">{{ rb.defending }} DEF</p>
+        <p *ngIf="rb.heading" class="genericStatsStyle heading">{{ rb.heading }} HEA</p>
                          
-      <img (click)="openRCB()" width="52px" height="58px" *ngIf="rcb.image" [src]="rcb.image" class="image imgStyle">
-      <img width="27px" height="15px" class="nationStyle" src="{{ rcb.nation }}" >
-      <img height="24 px" class="clubStyle" src="{{ rcb.club }}" >
-      <div [class.legend_font]="is_LegendCard(rcb)" [class.standard_font]="!is_LegendCard(rcb)">
-      <p *ngIf="rcb.pace" class="genericStatsStyle pace" >{{ rcb.pace }} PAC</p>
-      <p *ngIf="rcb.shooting" class="genericStatsStyle shooting">{{ rcb.shooting }} SHO</p>
-      <p *ngIf="rcb.passing" class="genericStatsStyle passing">{{ rcb.passing }} PAS</p>
-      <p *ngIf="rcb.dribbling" class="genericStatsStyle dribbling">{{ rcb.dribbling }} DRI</p>
-      <p *ngIf="rcb.defending" class="genericStatsStyle defending">{{ rcb.defending }} DEF</p>
-      <p *ngIf="rcb.heading" class="genericStatsStyle heading">{{ rcb.heading }} HEA</p>
-                     
-                     
+                         
+     </div>
+     </div>  
    </div>
-   </div>
-</div>
-<!-- RIGHT BACK -->
-<div>
-<div style="margin-left: 520px; margin-top: 620px; position: absolute;">
-   <img class="card" (click)="updatePlayer(rb)" (click)="openRB()" src="{{ rb.card }}" alt="rb">
-   <div class="card" [class.legend_font]="is_LegendCard(rb)" [class.standard_font]="!is_LegendCard(rb)">
-      <h1 class="name" (click)="openRB()" style="margin-top: -167px;">{{ rb.name }}</h1>
-      <h2 class="rating ratingStyle" (click)="openRB()">{{ rb.overall }}</h2>
-      <h3 class="position positionStyle" (click)="openRB()">RB</h3>
+    
+     <!-- GOALKEEPER -->
+     <div>
+   <div class="gk">
+     <img class="card" (click)="updatePlayer(gk)" (click)="openGK()" src="{{ gk.card }}" alt="gk">
+     <div class="card" [class.legend_font]="is_LegendCard(gk)" [class.standard_font]="!is_LegendCard(gk)">
+        <h1 class="name" (click)="openGK()" style="margin-top: -167px;">{{ gk.name }}</h1>
+        <h2 class="rating ratingStyle" (click)="openGK()">{{ gk.overall }}</h2>
+        <h3 class="position positionStyle" (click)="openGK()">GK</h3>
+                             
+        <img (click)="openGK()" width="52px" height="58px" *ngIf="gk.image" [src]="gk.image" class="image imgStyle">
+        <img width="27px" height="15px" class="nationStyle" src="{{ gk.nation }}" >
+        <img height="24 px" class="clubStyle" src="{{ gk.club }}" >
+        <div [class.legend_font]="is_LegendCard(gk)" [class.standard_font]="!is_LegendCard(gk)">
+        <p *ngIf="gk.pace" class="genericStatsStyle pace" >{{ gk.pace }} PAC</p>
+        <p *ngIf="gk.shooting" class="genericStatsStyle shooting">{{ gk.shooting }} SHO</p>
+        <p *ngIf="gk.passing" class="genericStatsStyle passing">{{ gk.passing }} PAS</p>
+        <p *ngIf="gk.dribbling" class="genericStatsStyle dribbling">{{ gk.dribbling }} DRI</p>
+        <p *ngIf="gk.defending" class="genericStatsStyle defending">{{ gk.defending }} DEF</p>
+        <p *ngIf="gk.heading" class="genericStatsStyle heading">{{ gk.heading }} HEA</p>
                             
-      <img (click)="openRB()" width="52px" height="58px" *ngIf="rb.image" [src]="rb.image" class="image imgStyle">
-      <img width="27px" height="15px" class="nationStyle" src="{{ rb.nation }}" >
-      <img height="24 px" class="clubStyle" src="{{ rb.club }}" >
-      <div [class.legend_font]="is_LegendCard(rb)" [class.standard_font]="!is_LegendCard(rb)">
-      <p *ngIf="rb.pace" class="genericStatsStyle pace" >{{ rb.pace }} PAC</p>
-      <p *ngIf="rb.shooting" class="genericStatsStyle shooting">{{ rb.shooting }} SHO</p>
-      <p *ngIf="rb.passing" class="genericStatsStyle passing">{{ rb.passing }} PAS</p>
-      <p *ngIf="rb.dribbling" class="genericStatsStyle dribbling">{{ rb.dribbling }} DRI</p>
-      <p *ngIf="rb.defending" class="genericStatsStyle defending">{{ rb.defending }} DEF</p>
-      <p *ngIf="rb.heading" class="genericStatsStyle heading">{{ rb.heading }} HEA</p>
-                        
-                        
-   </div>
-   </div>   
-</div>
-
-   <!-- GOALKEEPER -->
-   <div>
-<div style="margin-left: 30px; margin-top: 900px; position: absolute;">
-   <img class="card" (click)="updatePlayer(gk)" (click)="openGK()" src="{{ gk.card }}" alt="gk">
-   <div class="card" [class.legend_font]="is_LegendCard(gk)" [class.standard_font]="!is_LegendCard(gk)">
-      <h1 class="name" (click)="openGK()" style="margin-top: -167px;">{{ gk.name }}</h1>
-      <h2 class="rating ratingStyle" (click)="openGK()">{{ gk.overall }}</h2>
-      <h3 class="position positionStyle" (click)="openGK()">GK</h3>
-                            
-      <img (click)="openGK()" width="52px" height="58px" *ngIf="gk.image" [src]="gk.image" class="image imgStyle">
-      <img width="27px" height="15px" class="nationStyle" src="{{ gk.nation }}" >
-      <img height="24 px" class="clubStyle" src="{{ gk.club }}" >
-      <div [class.legend_font]="is_LegendCard(gk)" [class.standard_font]="!is_LegendCard(gk)">
-      <p *ngIf="gk.pace" class="genericStatsStyle pace" >{{ gk.pace }} PAC</p>
-      <p *ngIf="gk.shooting" class="genericStatsStyle shooting">{{ gk.shooting }} SHO</p>
-      <p *ngIf="gk.passing" class="genericStatsStyle passing">{{ gk.passing }} PAS</p>
-      <p *ngIf="gk.dribbling" class="genericStatsStyle dribbling">{{ gk.dribbling }} DRI</p>
-      <p *ngIf="gk.defending" class="genericStatsStyle defending">{{ gk.defending }} DEF</p>
-      <p *ngIf="gk.heading" class="genericStatsStyle heading">{{ gk.heading }} HEA</p>
-                           
-                        
-   </div>
+                         
+     </div>
+     </div>
    </div> 
-</div>  
-
-
-</div>
-</div>
-
+    
+    
+   </div>
+   </div>
+    
+   
+   
