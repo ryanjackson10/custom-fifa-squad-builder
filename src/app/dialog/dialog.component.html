@@ -1,9 +1,6 @@
 <div style="margin-left: 30%;">
-    <!-- <mat-dialog-content>
-        <p> {{ data.name }} should be michael ballack </p>
-    </mat-dialog-content> -->
     <form>
-    <mat-form-field appearance="fill" style="width: 300px; margin-left: -70px;">
+    <mat-form-field appearance="fill" class="last_name">
         <mat-label>Last Name</mat-label>
         <input id = "last_name" matInput placeholder="">
       </mat-form-field>
@@ -29,11 +26,10 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
-      <p style="margin-top: -42.5px; margin-left: 120px;">OR</p>
+      <p class="or1">OR</p>
       <input (change)="handleNationInput($event.target.files)" type="file" id = "nation_files" multiple=50 hidden="hidden"/>
       <button (click)="chooseNationFiles()" mat-button color="primary" class="uploadFlag">+  Upload Flag</button>
-      <!-- <p *ngIf="selectedNation != ''">{{ selectedNation }}</p> -->
-      <p style="margin-top: -30px; margin-left: 120px;" *ngIf="visible_nation_file != ''">{{ visible_nation_file }}</p>
+      <p class="nation_file_" *ngIf="visible_nation_file != ''">{{ visible_nation_file }}</p>
     </div>
     <div>
       <mat-form-field style="margin-left: -70px;">
@@ -44,11 +40,10 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
-      <p style="margin-top: -42.5px; margin-left: 120px;">OR</p>
+      <p class="or2">OR</p>
       <input (change)="handleClubInput($event.target.files)" type="file" id = "club_files" multiple=50 hidden="hidden"/>
       <button (click)="chooseClubFiles()" mat-button color="primary" class="uploadCrest">+  Upload Crest</button>
-      <!-- <p *ngIf="selectedNation != ''">{{ selectedNation }}</p> -->
-      <p style="margin-top: -30px; margin-left: 120px;" *ngIf="visible_club_file != ''">{{ visible_club_file }}</p>
+      <p class="visible_club_file" *ngIf="visible_club_file != ''">{{ visible_club_file }}</p>
 
     </div>
 
@@ -62,10 +57,10 @@
         </mat-select>
       </mat-form-field>
 
-      <p style="margin-left: 100px; margin-top: -40px;">OR</p>
+      <p class="or3">OR</p>
 
       <form>
-        <mat-form-field appearance="fill" style="width: 180px; margin-left: 140px; top: -60px;">
+        <mat-form-field appearance="fill" class="custom_league">
             <mat-label>Custom League</mat-label>
             <input id = "league" matInput placeholder="" [disabled]="isLeagueSelected()">
           </mat-form-field>
@@ -77,9 +72,7 @@
     <div>
       <input (change)="handleFileInput($event.target.files)" type="file" id = "files" multiple=50 hidden="hidden"/>
       <button (click)="chooseFiles()" mat-button color="primary" class="uploadImage">&nbsp;&nbsp;&nbsp;&nbsp;+  Upload Player Image&nbsp;&nbsp;&nbsp;&nbsp;</button>
-      <p style="margin-top: 10px; margin-left: 20px;" *ngIf="visible_player_file != ''">{{ visible_player_file }}</p>
-    <!-- <button (click)="updatePlayer()" mat-button color="primary" style="background-color: #5FA784; color: white;">UPDATE</button> -->
-    <!-- <button (click)="updatePlayer()" mat-button color="primary" style="background-color: #5FA784; color: white;">Close</button> -->
+      <p class="visible_player_file" *ngIf="visible_player_file != ''">{{ visible_player_file }}</p>
       </div>
       <div class="format">
         <form>
@@ -142,7 +135,5 @@
       
       </div>
       <div>
-        <!-- <button (click)="updatePlayer()" mat-button color="primary" style="background-color: #5FA784; color: white; top: -200px; margin-left: 18%;">UPDATE</button> -->
       </div>
-        <!-- <img style="height: 30px;" src="/assets/messi.png" > -->
 </div>

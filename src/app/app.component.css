@@ -372,6 +372,36 @@
     margin-left: 30px; margin-top: 900px; position: absolute;
 }
 
+.pitch {
+    filter: brightness(.6); transform: rotate(90deg); margin-left: -340px; width: 1900px; margin-top: 100px;
+}
 
+.wingerLink {
+    width: 5px; height: 220px; z-index: -5
+}
+
+.midfielderLink {
+    width: 5px; height: 150px; z-index: -5;
+}
+
+.defenderLink {
+    width: 5px; height: 350px; z-index: -5
+}
+
+.gkLink {
+    width: 5px; height: 180px; z-index: -5
+}
+
+.cmLink {
+    width: 5px; height: 330px; z-index: -5
+}
+
+.midToFullbacks {
+    width: 5px; height: 250px; z-index: -5
+}
+
+.rbCmLink {
+    width: 5px; height: 450px; z-index: -5
+}
 
 

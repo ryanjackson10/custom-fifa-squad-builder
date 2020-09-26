@@ -37,3 +37,35 @@
     margin-left: 160px; 
     position: relative;
 }
+
+.last_name {
+    width: 300px; margin-left: -70px
+}
+
+.or1 {
+    margin-top: -42.5px; margin-left: 120px
+}
+
+.nation_file_ {
+    margin-top: -30px; margin-left: 120px
+}
+
+.or2 {
+    margin-top: -42.5px; margin-left: 120px
+}
+
+.visible_club_file {
+    margin-top: -30px; margin-left: 120px
+}
+
+.or3 {
+    margin-left: 100px; margin-top: -40px
+}
+
+.custom_league {
+    width: 180px; margin-left: 140px; top: -60px;
+}
+
+.visible_player_file {
+    margin-top: 10px; margin-left: 20px
+}
