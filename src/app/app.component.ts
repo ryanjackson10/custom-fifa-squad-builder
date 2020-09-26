@@ -22,6 +22,7 @@ export class AppComponent {
   strikerImage;
 
 
+  // Player defined in Player.ts
   striker = new Player();
   left_winger = new Player();
   right_winger = new Player();
@@ -34,6 +35,7 @@ export class AppComponent {
   rb = new Player();
   gk = new Player();
 
+  // manually check the link between every player, as in done in the real game
   checkChemistry(player1, player2) {
     let totalChem = 0;
     if (player1 == this.striker && player2 == this.left_winger) {
@@ -51,6 +53,7 @@ export class AppComponent {
       totalChem += 2;
     }
 
+    // same country is at least a yellow team. Same club is guaranteed green. Same country and league becomes green
     if (totalChem == 0) {
       return "assets/red.png";
     }
@@ -67,6 +70,7 @@ export class AppComponent {
   striker_and_lw = this.checkChemistry(this.striker, this.left_winger);
 
 
+// legend cards require a different font color, so we have to check to see if it is one
   is_LegendCard(player) {
     if (player.card == "/assets/legend.png") {
       return true;
@@ -92,6 +96,8 @@ export class AppComponent {
 
 
   }
+
+  // technically different dialogs for each position, since each has different data. The GK also has different attributes than the outfield players
 
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogComponent, {

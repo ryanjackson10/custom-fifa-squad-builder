@@ -6,6 +6,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { stringify } from 'querystring';
 import { FormControl } from '@angular/forms';
 
+// so HTML knows what to look for
 interface Player {
   card: string,
   name: string,
@@ -76,6 +77,7 @@ export class DialogComponent implements OnInit {
 
   league_selected = false;
 
+  // cards are preloaded in the assets folder, and the app.component.ts adds the customizable features
   cards: Card[] = [
     {type: "IF", location: "/assets/if.png"},
     {type: "iMOTM", location: "/assets/imotm.png"},
@@ -88,6 +90,7 @@ export class DialogComponent implements OnInit {
 
   ]
 
+  // football powerhouse countries so I don't have to upload a flag for every player
   nations: Nation[] = [
     {value: 'Argentina', image: "/assets/argentina.png"},
     {value: 'Belgium', image: "/assets/belgium.png"},
@@ -104,6 +107,7 @@ export class DialogComponent implements OnInit {
     {value: 'Uruguay', image: "/assets/uruguay.png"},
   ]
 
+// football powerhouse clubs so I don't have to upload a club crest for every player 
   clubs: Club[] = [
     {value: 'A.C. Milan', image: "/assets/milan.png"},
     {value: 'Ajax', image: "/assets/ajax.png"},
@@ -124,6 +128,7 @@ export class DialogComponent implements OnInit {
 
   ]
 
+  // 6 most popular leagues. The undefined value is the default value on the dropdown
   leagues: League[] = [
     {value: 'Bundesliga'},
     {value: 'Eredivisie'},
@@ -140,6 +145,7 @@ export class DialogComponent implements OnInit {
   }
 
 
+  // have to go through what feels like a Rube Goldberg section of code between goalkeepers have different attributes than outfield players
 
   returnStat(player, number) {
     arr = ["PAC", "PAS", "SHO", "DRI", "DEF", "HEA"];
