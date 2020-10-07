@@ -1,4 +1,4 @@
-* **Make sure the angular cli are downloaded**
+* **Make sure the angular cli is downloaded**
   * >ng --version
   * >npm install -g @angular/cli
 * **clone the project**
