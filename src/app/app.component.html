@@ -114,7 +114,7 @@
         <h3 class="position positionStyle" (click)="openLeftWinger()">LW</h3>
      
         <img (click)="openLeftWinger()" width="52px" height="58px" *ngIf="left_winger.image" [src]="left_winger.image" class="image imgStyle">
-        <img width="27px" height="15px" class="nationStyle=" src="{{ left_winger.nation }}" >
+        <img style="margin-left: 13px; margin-top: 24px; position: absolute; box-shadow: 0.2px 0.2px;" width="27px" height="15px" src="{{ left_winger.nation }}" >
         <img height="24 px" class="clubStyle" src="{{ left_winger.club }}" >
         <div [class.legend_font]="is_LegendCard(left_winger)" [class.standard_font]="!is_LegendCard(left_winger)">
            <p *ngIf="left_winger.pace" class="genericStatsStyle pace" >{{ left_winger.pace }} PAC</p>
