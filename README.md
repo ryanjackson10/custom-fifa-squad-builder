@@ -6,6 +6,10 @@
 * **run the project**
   * >ng serve
 
-custom squad builder using the FIFA 14 card aesthetics. Here's a custom XI I made of my all-time favorite Premier League players to watch.
+custom squad builder using the FIFA 14 card aesthetics. Here are some of the example squads that I've made.
 
+My all-time favorite Premier League Players to watch:
 ![](src/assets/example.png)
+
+My all-time greatest Real Madrid XI:
+![](src/assets/realmadrid-xi.png)
