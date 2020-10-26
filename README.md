@@ -15,4 +15,4 @@ My all-time greatest Real Madrid XI:
 ![](src/assets/realmadrid-xi.png)
 
 My all-time best Premier League XI:
-1[](src/assets/best_prem.png)
+![](src/assets/best_prem.png)
