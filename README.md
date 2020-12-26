@@ -14,5 +14,5 @@ My all-time favorite Premier League Players to watch:
 My all-time greatest Real Madrid XI:
 ![](src/assets/realmadrid-xi.png)
 
-My all-time best Premier League XI:
+My all-time best Premier League XI (misspelled Vieira's name :/):
 ![](src/assets/best_prem.png)
