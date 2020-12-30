@@ -6,7 +6,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { stringify } from 'querystring';
 import { FormControl } from '@angular/forms';
 
-// so HTML knows what to look for
+// type declarations
 interface Player {
   card: string,
   name: string,
