@@ -16,3 +16,6 @@ My all-time greatest Real Madrid XI:
 
 My all-time best Premier League XI (misspelled Vieira's name :/):
 ![](src/assets/best_prem.png)
+
+Semi-random assortment of iconic players that I rate very highly:
+![](src/assets/semirandom.png)
