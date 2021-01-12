@@ -6,7 +6,7 @@
 * **run the project**
   * >ng serve
 
-custom squad builder using the FIFA 14 card aesthetics. Here are some of the example squads that I've made.
+custom squad builder using the FIFA 14 card aesthetics. Here are some of the example squads that I've made:
 
 My all-time favorite Premier League Players to watch:
 ![](src/assets/example.png)
